@@ -1,0 +1,213 @@
+body{
+  overflow: block;
+  position: relative;
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture svg{
+  width: 80%;
+  height: 80%;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content .word{
+  margin-bottom: 1em;
+}
+
+.content .word h3{
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.content a{
+  text-decoration: none;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 30vw;
+}
+
+.social div{
+  margin-bottom: 1.5em;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border-radius: 2em;
+  padding: .3em .5em;
+  background-color: var(--white-color);
+  box-shadow: 0em .01em .2em rgba(0,0,0,0.2);
+  color: var(--dark-color);
+  cursor: pointer;
+  transition:all .09s ease-in-out;
+}
+
+.contact_number, .email, .facebook, .twitter, .address{
+  position: absolute;
+  width: 100%;
+}
+
+.contact_number{
+  bottom: 85%;
+}
+
+.address{
+  bottom: 75%;
+}
+
+.email{
+  bottom: 65%;
+}
+
+.facebook{
+  bottom: 55%;
+}
+
+.twitter{
+  bottom: 45%;
+}
+
+.social div:hover{
+  position: absolute;
+  width: 105%;
+  right: 20%;
+  font-weight: 600;
+  font-size:large;
+}
+
+.contact_number, .email, .facebook, .twitter, .address{
+  transform: translateX(150%);
+}
+
+.contact_number{
+  animation: social_appear 1s forwards;
+}
+
+.address{
+  animation: social_appear 1s .2s forwards;
+}
+
+.email{
+  animation: social_appear 1s .4s forwards;
+}
+
+.facebook{
+  animation: social_appear 1s .6s forwards;
+}
+
+.twitter{
+  animation: social_appear 1s .8s forwards;
+}
+
+@keyframes social_appear{
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes social_hover{
+  100%{
+    width: 100%;
+    right: 20%;
+  }
+}
+
+.social div svg{
+ width: 2.5em;
+ height: 2.5em;
+ padding: .5em;
+ margin-right: 1.2em;
+ border-radius: 50%;
+}
+
+.social div span{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  font-size: .89em;
+}
+
+.social .contact_number svg{
+  background-color: #0CCB73;
+  stroke: var(--white-color);
+  fill: var(--white-color);
+}
+
+.social .email svg{
+  background-color: #BC0000;
+  stroke: var(--white-color);
+}
+
+.social .address svg{
+  fill: #E42526;
+  stroke: var(--dark-color);
+  background-color: rgba(230, 225, 225, 0.692);
+}
+
+.social .address svg circle{
+  fill: rgba(230, 225, 225, 0.692);
+  stroke: var(--dark-color);
+}
+
+.social .facebook svg{
+  background-color: #4D6FA4;
+  fill: var(--white-color);
+  stroke: none;
+}
+
+.social .twitter svg{
+  background-color: #29A9E0;
+  fill: var(--white-color);
+  stroke: none;
+}
+
+.content .word p{
+  color: var(--dark-color);
+  font-weight: 200;
+  font-size: 1em;
+}
+
+.wave svg, .fill svg{
+  position: absolute;
+  bottom: -1%;
+}
+
+.wave svg{
+  z-index: -1;
+}
+
+.fill svg{
+  z-index: -2;
+}
+
+footer{
+  position: absolute;
+  bottom: -2em;
+  left: 40%;
+  margin-bottom: 4em;
+  font-size: small;
+  font-weight: 300;
+  color:var(--white-color);
+}

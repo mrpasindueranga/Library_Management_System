@@ -1,0 +1,19 @@
+.contain{
+  width: 100%;
+  height: 10%;
+}
+
+.contain nav{
+  border-bottom: var(--form-input-color) 1px solid;
+  height: 100%;
+  width: fit-content;
+  padding: 1em 0em;
+}
+
+.contain nav a{
+  padding-left: 2em;
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 1em;
+  text-decoration: none;
+}

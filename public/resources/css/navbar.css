@@ -1,0 +1,162 @@
+body{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo svg{
+  width: 2em;
+  height: 2em;
+}
+
+.logo span{
+  margin-left: 1em;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  box-shadow: 0em .01em .2em rgba(0,0,0,0.2);
+  box-sizing: border-box;
+}
+
+.navlink{
+  padding-left: 50em;
+}
+
+.navlink a{
+  color:var(--dark-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  padding: 1.3em 0em;
+  margin: 0em .8em;
+}
+
+.active{
+  border-bottom: .2em solid var(--primary-color);
+}
+
+.search{
+  border: var(--form-icon-color) solid 2px;
+  width: 40%;
+  height: 2.3em;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 1em;
+  box-shadow: 0em .01em .2em rgba(0,0,0,0.2);
+}
+
+.search select{
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+  text-indent: 5%;
+  color: var(--dark-color);
+  border: none;
+  outline: none;
+  background-color: #ebecee;
+}
+
+.search input{
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  padding-left: 1em;
+}
+
+.search input::placeholder{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.search svg{
+  stroke: var(--form-icon-color);
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.navbar a{
+  padding-left: 1em;
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+.user-profile li{
+  list-style: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.profile{
+  position: relative;
+}
+
+.profile-menu{
+  position: absolute;
+  left: -40%;
+  padding: 0em;
+  top: 3.5em;
+  width: 150%;
+  box-shadow: 0em .01em .2em rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+  background-color: var(--white-color);
+}
+
+.profile-menu a{
+  padding: 0em;
+}
+
+.profile-menu li{
+  list-style: none;
+  width: 100%;
+  padding: .4em .5em;
+  display: flex;
+  cursor: pointer;
+}
+
+.profile-menu li svg{
+  width: 2em;
+}
+
+.profile-menu li span{
+  padding-left: .3em;
+}
+
+.profile-menu li:hover{
+  background-color: var(--form-input-color);
+}
+
+.navbar>ul>a>li>svg{
+  stroke: var(--dark-color);
+  opacity: .8;
+}
+
+.user-profile>li>img{
+  width: 2em;
+  border-radius: 50%;
+}
+
+.display{
+  display: block;
+}
