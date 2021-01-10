@@ -1,3 +1,8 @@
+.body{
+  width: 100%;
+  height: 100%;
+}
+
 .find{
   padding: 1em 0em;
   width: 100%;
@@ -28,8 +33,8 @@
   stroke: var(--form-input-color);
 }
 
-.find>input{
-  width: 8em;
+.find>a{
+  width: 6em;
   background-color: #2EA44F;
   color: #FFFFE9;
   border-radius: 3em;
@@ -37,7 +42,9 @@
   border: none;
   font-size: 1em;
   font-weight: 500;
-  cursor: pointer;
+  text-align: center;
+  padding-top: .5em;
+  text-decoration: none;
 }
 
 .card_container{
@@ -65,15 +72,6 @@
   align-items: center;
 }
 
-.cat_card .head .topic span{
-  margin-left: 1em;
-  font-size: .8em;
-  padding: .2em .4em;
-  box-shadow: 0em .01em .2em rgba(0,0,0,0.2);
-  border-radius: 3em;
-  color: var(--form-icon-color);
-}
-
 .cat_card .head .topic h1{
   color: var(--dark-color);
   font-size: 1.5em;
@@ -92,6 +90,21 @@
 .cat_card .head a:hover{
   color: var(--white-color);
   background-color: var(--dark-color);
+}
+
+.cat_card .body{
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body a svg{
+  stroke: var(--form-icon-color);
+}
+
+.body a svg:hover{
+  stroke: red;
 }
 
 .cat_card p{

@@ -1,0 +1,54 @@
+#formHeading{
+  margin: 1em;
+  font-size:2em;
+  color: var(--dark-color);
+}
+
+#catForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  height: 100%;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 0em .01em .2em rgba(0,0,0,0.2);
+}
+
+.inputwrap{
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin: .5em 1em;
+  padding: 1em;
+  width: 90%;
+  border-radius: 1em;
+  background-color: #FAFBFC;
+}
+
+.inputwrap input, .inputwrap textarea{
+  background-color: #FAFBFC;
+  height: 100%;
+  width: 100%;
+  border: var(--form-input-color) 1px solid;
+}
+
+.inputwrap label{
+  width: 10em;
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 1em;
+}
+
+#save{
+  background-color: green;
+  color: #FAFBFC;
+  border: none;
+  outline: none;
+  padding: .5em 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  margin-left: 75%;
+}
