@@ -4,16 +4,22 @@
 }
 
 .find{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.find form{
   padding: 1em 0em;
   width: 100%;
 }
 
-.find{
+.find form{
   display: flex;
   justify-content: space-between;
 }
 
-.find .search{
+.find form .search{
   display: flex;
   width: 38%;
   border: var(--form-input-color) 1px solid;
@@ -22,28 +28,39 @@
   padding: .5em;
 }
 
-.find .search input{
+.find form .search input{
   width: 100%;
   border: none;
   outline: none;
   text-indent: .5em;
 }
 
-.find .search svg{
+.find form .search svg{
   stroke: var(--form-input-color);
+}
+
+.search button{
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .find>a{
   width: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #2EA44F;
   color: #FFFFE9;
-  border-radius: 3em;
+  border-radius: 2em;
+  height: 3em;
   outline: none;
   border: none;
   font-size: 1em;
   font-weight: 500;
   text-align: center;
-  padding-top: .5em;
+  padding-top: .2em;
   text-decoration: none;
 }
 
