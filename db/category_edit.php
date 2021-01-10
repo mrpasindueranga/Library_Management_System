@@ -20,7 +20,7 @@
     $delCatQuery->execute();
     $conn->close();
 
-    header('location: ../component/profile/category.php');
+    header('location: ./category.php');
 }
 
   if (isset($_GET['e_id'])) {

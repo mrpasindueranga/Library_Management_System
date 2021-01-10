@@ -1,12 +1,15 @@
 <?php
   if (!isset($_GET['q'])) {
-    require_once '../../db/Conn.php';
+    require '../../db/Conn.php';
     $allCat = $conn->query('SELECT * FROM category');
     $conn->close();
-  }else {
-    require_once '../../db/Conn.php';
+  }
+  if (isset($_GET['q'])) {
+    require '../../db/Conn.php';
     $search = htmlentities($_GET['q']);
-    $allCat = $conn->query("SELECT * FROM category WHERE Name like '%.$search.%'");
+    $allCat = $conn->query("SELECT * FROM category WHERE Name LIKE CONCAT('%',$search,'%') ");
+    // $allCat->bind_param("s", $search);
+    // $allCat->execute();
     $conn->close();
   }
   
