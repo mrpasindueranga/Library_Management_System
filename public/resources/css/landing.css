@@ -75,11 +75,16 @@ section{
   font-size: 1em;
   color:white;
   background-color: var(--primary-color);
+  border: var(--primary-color) 2px solid;
   padding: .8em 2em;
   border-radius: 2em;
   outline: none;
-  border: none;
   cursor: pointer;
+}
+
+.landing button:hover{
+  background-color: white;
+  color: var(--primary-color);
 }
 
 .form-content{
@@ -162,15 +167,20 @@ form button, #reg, #login-submit{
  position: absolute;
  bottom: 4em;
  background-color: var(--primary-color);
+ border: var(--primary-color) 2px solid;
  font-weight: 500;
  color: var(--white-color);
  font-size: 1em;
  text-transform: uppercase;
  outline: none;
- border: none;
  cursor: pointer;
  padding: .5em 1.5em;
  border-radius: 1.5em;
+}
+
+#reg:hover, #login-submit:hover{
+  background-color: white;
+  color: var(--primary-color);
 }
 
 .signin-wrap{
@@ -230,27 +240,6 @@ form button, #reg, #login-submit{
   display: block;
 }
 
-.label{
-  position: absolute;
-  top:0;
-  right: 0;
-  width: 20em;
-  border-radius: .2em;
-  color: var(--dark-color);
-  padding: .5em 1em;
-  margin: 1em 0em;
-  transform: translateX(150%);
-}
-
-.label-appear{
-  animation: label-appear 1s ease-in-out forwards;
-}
-
-.success{
-  background-color: var(--label-success-inside);
-  border-left: var(--label-success-border);
-}
-
 footer{
   position: absolute;
   bottom: -2em;
@@ -259,24 +248,6 @@ footer{
   font-size: small;
   font-weight: 300;
   color:var(--dark-color);
-}
-
-@keyframes label-appear{
-  20%{
-    transform: translateX(0%);
-  }
-  40%{
-    transform: translateX(10%);
-  }
-  60%{
-    transform: translateX(-5%);
-  }
-  80%{
-    transform: translateX(2%);
-  }
-  100%{
-    transform: translateX(0%);
-  }
 }
 
 @keyframes login-appear{

@@ -1,0 +1,60 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.errorCard{
+  width: 40%;
+  height: 40%;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: .1em .1em 1em rgba(0,0,0,0.1);
+}
+
+.errorCard .errorHead{
+  width: 100%;
+  height: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.success{
+  background-color: var(--success-color);
+}
+
+.info{
+  background-color: var(--info-color);
+}
+
+.warning{
+  background-color: var(--warning-color);
+}
+
+.errorPara{
+ margin: 1em;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.errorPara a{
+  padding: .5em 1em;
+  background-color: var(--dark-color);
+  border-radius: 2em;
+  width: 6.5em;
+  color: white;
+  margin-top: 3em;
+  text-decoration: none;
+  border: var(--dark-color) 2px solid;
+}
+
+.errorPara a:hover{
+  color: var(--dark-color);
+  background-color: white;
+}

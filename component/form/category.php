@@ -7,7 +7,7 @@
   <input type="hidden" name="e_id" value="<?php echo $cat['ID'];?>">
   <div class="inputwrap">
     <label>Name</label>
-    <input name="Name" type="text" value="<?php echo $cat['Name'];?>">
+    <input name="Name" type="text" value="<?php echo $cat['Name'];?>" required>
   </div>
   <div class="inputwrap">
     <label>Description</label>
@@ -22,11 +22,11 @@
   <input type="hidden" name="c_id">
   <div class="inputwrap">
     <label>Name</label>
-    <input name="Name" type="text">
+    <input name="Name" type="text" required>
   </div>
   <div class="inputwrap">
     <label>Description</label>
-    <textarea name="Des" id="" cols="30" rows="10"></textarea> 
+    <textarea name="Des" id="" cols="30" rows="10" required></textarea> 
   </div>
   <input id="save" type="submit" value="Save">
 </form>

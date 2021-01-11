@@ -1,6 +1,15 @@
 <?php
 
+  session_start();
+
   require '../db/Conn.php';
+
+  $data = [
+    'head'=>'',
+    'msg'=>'',
+    'status'=>''
+  ];
+
 
   // Gather data from registration form
 
@@ -8,11 +17,6 @@
     $ID = htmlentities($_POST['ID']);
     $Uname = htmlentities($_POST['Uname']);
     $Passwd = htmlentities($_POST['Passwd']);
-
-    $data = [
-      'msg'=>'',
-      'status'=>''
-    ];
 
     // Check ID exits in user table
   
@@ -42,22 +46,22 @@
         $regUserQuery->bind_param("iss",$ID,$Uname,$Passwd);
         $regUserQuery->execute();
         $conn->close(); 
-      
+        
+        $data['head'] = 'Success..!!';
         $data['msg'] = 'You are registered successfully';
         $data['status'] = 'success';
-        header('location: ../public/index.php');
+        $_SESSION['error'] = $data;
+        header('location: ../helper/errorHandler.php');
       }else{
+        $data['head'] = 'Information..!!';
         $data['msg'] = 'You are already registered';
         $data['status'] = 'info';
-        header('location: ../public/index.php');
+        $_SESSION['error'] = $data;
+        header('location: ../helper/errorHandler.php');
       }
   
     }
 
-   }else {
-    $data['msg'] = 'Please fields are required';
-    $data['status'] = 'warning';
-    header('location: ../public/index.php');
    }
   }
 

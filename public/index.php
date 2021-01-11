@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./resources/css/landing.css">
 
   <script src="./resources/js/landing.js" defer></script>
-  <script src="../helper/errorHandler.js" defer></script>
   <title>Lowa State University | E-Library</title>
 </head>
 <body>
@@ -457,7 +456,7 @@
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
             </label>
-            <input type="text" placeholder="Username" name="Uname">
+            <input type="text" placeholder="Username" name="Uname" required>
           </div>
           <div class="wrap-type">
             <label class="icon">
@@ -468,7 +467,7 @@
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
               </svg>
             </label>
-            <input type="password" placeholder="Password" name="Passwd">
+            <input type="password" placeholder="Password" name="Passwd" required>
           </div>
         </div>
         <input type="submit" id="login-submit" value="Login">
@@ -531,7 +530,7 @@
                 <line x1="1" y1="10" x2="23" y2="10"></line>
               </svg>
             </label>
-            <input type="text" placeholder="Registration Number" name="ID">
+            <input type="text" placeholder="Registration Number" name="ID" required>
           </div>
           <div class="wrap-type">
             <label for="" class="icon">
@@ -542,7 +541,7 @@
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
             </label>
-            <input type="text" placeholder="Username" name="Uname">
+            <input type="text" placeholder="Username" name="Uname" required>
           </div>
           <div class="wrap-type">
             <label for="" class="icon">
@@ -553,7 +552,7 @@
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
               </svg>
             </label>
-            <input type="password" placeholder="Password" name="Passwd">
+            <input type="password" placeholder="Password" name="Passwd" required>
           </div>
         </div>
         <div class="sign-in sign-up">
@@ -561,13 +560,6 @@
         </div>
         <input type="submit" id="reg" value="Register">
       </form>
-    </div>
-    <div class="errorHandler">
-    <?php require_once '../db/reg.php'?>
-    <input id="captureData" type="hidden" value="<?php echo $data?>">
-    <!-- <div class="label success label-appear">
-      Need a connection
-    </div> -->
     </div>
   </section>
   <footer>

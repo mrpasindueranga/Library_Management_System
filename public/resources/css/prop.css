@@ -7,8 +7,9 @@
   --form-icon-color: #9FA1A5;
   --dark-color: #333;
   --white-color: #FFF;
-  --label-success-inside: #ABEBC6;
-  --label-success-border: #28B463 .5em solid;
+  --success-color: #28B463;
+  --info-color:#0196D8;
+  --warning-color:  #BC6F37;
 }
 
 *{
