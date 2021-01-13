@@ -1,0 +1,49 @@
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5em;
+}
+
+.content>div{
+  margin: 1em;
+  width: 60%;
+  height: 25%;
+  border-radius: 1em;
+  background-color:white;
+  box-shadow: .01em .01em .5em rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.head{
+  width: 100%;
+  height: 30%;
+  background-color: var(--dark-color);
+  opacity: .9;
+  color: white;
+  font-size: .8em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.head h1{
+  margin-left: 1em;
+}
+
+.card_info{
+  width: 100%;
+  height: 100%;
+  margin-top: 1em;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  margin: 1em;
+}
+
+.row span{
+  margin-left: 1em;
+}

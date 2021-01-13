@@ -42,7 +42,7 @@
   
       if(!$isUserExit){
         require '../db/Conn.php';
-        $regUserQuery = $conn->prepare("INSERT INTO account VALUES(?,?,?)");
+        $regUserQuery = $conn->prepare("INSERT INTO account(ID,Uname,Passwd) VALUES(?,?,?)");
         $regUserQuery->bind_param("iss",$ID,$Uname,$Passwd);
         $regUserQuery->execute();
         $conn->close(); 

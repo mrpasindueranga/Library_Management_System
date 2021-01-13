@@ -47,9 +47,9 @@ body{
   padding: .5em 1em;
   background-color: var(--dark-color);
   border-radius: 2em;
+  margin-bottom: 1em;
   width: 6.5em;
   color: white;
-  margin-top: 3em;
   text-decoration: none;
   border: var(--dark-color) 2px solid;
 }

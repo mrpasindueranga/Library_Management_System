@@ -1,0 +1,92 @@
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+form{
+  display: flex;
+}
+
+form .profile{
+  width: 23%;
+  height: 100vh;  
+  box-shadow: .1em 0em .1em rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form .profile .dp{
+  width: 90%;
+  margin-top: 1em;
+}
+
+form .profile .dp img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+form .profile .change{
+  width:80%;
+  box-sizing: border-box;
+}
+
+.change input{
+  margin-top: 1em;
+  width: 95%;
+  padding: .5em;
+  border-radius: .5em;
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: .9em;
+  background-color: #FAFBFC;
+  border: var(--form-input-color) .1em solid;
+  outline: none;
+  cursor: pointer;
+}
+
+.change input:hover{
+  background-color: var(--form-input-color);
+  border: var(--dark-color) .1em solid;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  background-color: transparent;
+  border: none;
+  color: var(--dark-color);
+  cursor: pointer;
+  outline: none;
+}
+
+form .content{
+  width: 77%;
+  height: 100vh;
+}
+
+.row span input,
+.row span textarea{
+  padding: .1em .3em;
+  width: 20em;
+  border-radius: .3em;
+  border: var(--form-icon-color) 2px solid;
+}
+
+.row span select{
+  border: var(--form-icon-color) 2px solid;
+}
+
+.btn>input{
+  margin-top: 45em;
+  transform: translate(-220%);
+  padding: .5em 1em;
+  border-radius: 2em;
+  border: var(--success-color) 2px solid;
+  background-color: var(--success-color);
+  color: white;
+  cursor: pointer;
+}
+
+.btn>input:hover{
+  background-color: white;
+  color: var(--success-color);
+}
