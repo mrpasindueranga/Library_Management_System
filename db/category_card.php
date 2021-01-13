@@ -7,9 +7,7 @@
   if (isset($_GET['q'])) {
     require '../../db/Conn.php';
     $search = htmlentities($_GET['q']);
-    $allCat = $conn->query("SELECT * FROM category WHERE Name LIKE CONCAT('%',$search,'%') ");
-    // $allCat->bind_param("s", $search);
-    // $allCat->execute();
+    $allCat = $conn->query("SELECT * FROM category WHERE Name LIKE CONCAT('%','$search','%') ");
     $conn->close();
   }
   
