@@ -1,5 +1,9 @@
  ###################################################
- # Lowa State Library Management System TODO List 
+ # Lowa State Library Management System
+
+ ### Author : H.D.Pasindu Eranga
+ ### Project : Online book reservation system for library
+ ### License : MIT 
  ###################################################
   ## Create Authorization
   * [x]  Implement landing page
@@ -18,7 +22,7 @@
   * [x] Implement category delete
   * [x] Implement category view
   * [x] Implement category update
-  * [ ] Implement category search
+  * [x] Implement category search
   * [ ] Implement mvp error handling
 
   ## Profile (Own profile)
@@ -28,7 +32,9 @@
 
   ## Member (Only for librarian)
   * [ ] Implement member create
+  * [x] Implement profile view
   * [ ] Implement member delete
+  * [x] Implement member search
   * [ ] Implement mvp error handling
 
   ## Book
