@@ -1,55 +1,58 @@
-section{
-  position: relative;  
+section {
+  position: relative;
 }
 
-.landing{
+body {}
+
+.landing {
   padding: 3em 0em;
   position: relative;
 }
 
-.login-appear{
+.login-appear {
   animation: login-appear 1.5s ease-in-out forwards;
 }
 
-#slide-right{
+#slide-right {
   animation: slide-right .5s ease-in-out forwards;
 }
 
-#login-remove{
+#login-remove {
   animation: login-remove 1.5s ease-in-out forwards;
 }
 
-#signup-remove{
+#signup-remove {
   animation: signup-remove 1.5s ease-in-out forwards;
 }
 
-.slide-left{
+.slide-left {
   animation: slide-left .5s ease-in-out forwards;
 }
 
-.signup-appear{
+.signup-appear {
   animation: signup-appear 1.5s ease-in-out forwards;
 }
 
-.content{
+.content {
   display: flex;
   justify-content: space-between;
 }
-.para{
+
+.para {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 3em;
 }
 
-.para h2{
-  color:var(--primary-color);
+.para h2 {
+  color: var(--primary-color);
   font-weight: 400;
   font-size: 3em;
   line-height: 1em;
 }
 
-.para p{
+.para p {
   padding-top: 2em;
   font-weight: 300;
   width: 80%;
@@ -60,20 +63,20 @@ section{
   margin-bottom: 1em;
 }
 
-.landing .banner svg{
+.landing .banner svg {
   padding-top: 2em;
   float: right;
   width: 90%;
   height: 90%;
 }
 
-.landing button{
+.landing button {
   position: absolute;
   bottom: 10em;
   left: 3em;
   font-weight: 500;
   font-size: 1em;
-  color:white;
+  color: white;
   background-color: var(--primary-color);
   border: var(--primary-color) 2px solid;
   padding: .8em 2em;
@@ -82,22 +85,22 @@ section{
   cursor: pointer;
 }
 
-.landing button:hover{
+.landing button:hover {
   background-color: white;
   color: var(--primary-color);
 }
 
-.form-content{
+.form-content {
   position: absolute;
   right: 10em;
   bottom: 5em;
   background-color: var(--white-color);
   border-radius: 2em;
-  box-shadow: 0em .01em .2em rgba(0,0,0,0.2);
+  box-shadow: 0em .01em .2em rgba(0, 0, 0, 0.2);
   transform: translateX(200%);
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -106,7 +109,7 @@ form{
   align-items: center;
 }
 
-form .avater{
+form .avater {
   position: absolute;
   height: 5em;
   width: 5em;
@@ -114,7 +117,7 @@ form .avater{
   left: 1em;
 }
 
-form h3{
+form h3 {
   padding: 1em 0em;
   color: var(--primary-color);
   line-height: 1em;
@@ -125,13 +128,13 @@ form h3{
   left: .5em;
 }
 
-.input-wrap{
+.input-wrap {
   position: absolute;
   bottom: 7em;
   left: 2em;
 }
 
-.input-wrap .wrap-type{
+.input-wrap .wrap-type {
   background-color: var(--form-input-color);
   display: flex;
   justify-content: center;
@@ -140,21 +143,21 @@ form h3{
   margin-bottom: 1em;
 }
 
-.wrap-type:first-child{
+.wrap-type:first-child {
   margin-top: 1em;
 }
 
-.input-wrap .icon{
-  color:var(--form-icon-color);
+.input-wrap .icon {
+  color: var(--form-icon-color);
 }
 
-.wrap-type input::placeholder{
-  color:var(--form-icon-color);
+.wrap-type input::placeholder {
+  color: var(--form-icon-color);
   font-size: 1.2em;
   font-weight: 300;
 }
 
-.wrap-type input{
+.wrap-type input {
   outline: none;
   border: none;
   background-color: var(--form-input-color) !important;
@@ -163,31 +166,34 @@ form h3{
   font-weight: 500;
 }
 
-form button, #reg, #login-submit{
- position: absolute;
- bottom: 4em;
- background-color: var(--primary-color);
- border: var(--primary-color) 2px solid;
- font-weight: 500;
- color: var(--white-color);
- font-size: 1em;
- text-transform: uppercase;
- outline: none;
- cursor: pointer;
- padding: .5em 1.5em;
- border-radius: 1.5em;
+form button,
+#reg,
+#login-submit {
+  position: absolute;
+  bottom: 4em;
+  background-color: var(--primary-color);
+  border: var(--primary-color) 2px solid;
+  font-weight: 500;
+  color: var(--white-color);
+  font-size: 1em;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  padding: .5em 1.5em;
+  border-radius: 1.5em;
 }
 
-#reg:hover, #login-submit:hover{
+#reg:hover,
+#login-submit:hover {
   background-color: white;
   color: var(--primary-color);
 }
 
-.signin-wrap{
+.signin-wrap {
   z-index: 100;
 }
 
-.sign-up{
+.sign-up {
   position: absolute;
   left: 2em;
   bottom: 2em;
@@ -195,123 +201,133 @@ form button, #reg, #login-submit{
   color: #888;
 }
 
-.sign-up a{
+.sign-up a {
   margin-left: .3em;
   word-spacing: -.1em;
   color: #888;
 }
 
-.signup-wrap{
+.signup-wrap {
   position: absolute;
   right: 46em;
   transform: translateX(400%);
 }
 
-.signup-wrap form .input-wrap{
+.signup-wrap form .input-wrap {
   position: absolute;
-  top:10em;
+  top: 10em;
 }
 
-.signup-wrap form button{
+.signup-wrap form button {
   position: absolute;
   bottom: 4em;
 }
 
-.signup-wrap form .sign-in{
+.signup-wrap form .sign-in {
   position: absolute;
   bottom: 1.5em;
   left: 4em;
 }
 
-.signup-wrap form .sign-in a{
+.signup-wrap form .sign-in a {
   letter-spacing: .01em;
 }
 
-.signup-wrap form h3{
+.signup-wrap form h3 {
   position: absolute;
   top: 1.6em
 }
 
-.display-none{
+.display-none {
   display: none;
 }
 
-.display-appear{
+.display-appear {
   display: block;
 }
 
-footer{
+footer {
   position: absolute;
   bottom: -2em;
   left: 40%;
   margin-bottom: 4em;
   font-size: small;
   font-weight: 300;
-  color:var(--dark-color);
+  color: var(--dark-color);
 }
 
-@keyframes login-appear{
-  20%{
+@keyframes login-appear {
+  20% {
     transform: translateX(0%);
   }
-  40%{
+
+  40% {
     transform: translateX(10%);
   }
-  60%{
+
+  60% {
     transform: translateX(-5%);
   }
-  80%{
+
+  80% {
     transform: translateX(2%);
   }
-  100%{
+
+  100% {
     transform: translateX(0%);
   }
 }
 
-@keyframes signup-appear{
-  20%{
+@keyframes signup-appear {
+  20% {
     transform: translateX(200%);
   }
-  40%{
+
+  40% {
     transform: translateX(210%);
   }
-  60%{
+
+  60% {
     transform: translateX(195%);
   }
-  80%{
+
+  80% {
     transform: translateX(202%);
   }
-  100%{
+
+  100% {
     transform: translateX(200%);
   }
 }
 
-@keyframes signup-remove{
-  100%{
+@keyframes signup-remove {
+  100% {
     transform: translate(400%);
   }
 }
 
-@keyframes login-remove{
-  100%{
+@keyframes login-remove {
+  100% {
     transform: translateX(200%);
   }
 }
 
-@keyframes slide-right{
-  0%{
+@keyframes slide-right {
+  0% {
     transform: translateX(-55%);
   }
-  100%{
+
+  100% {
     transform: translateX(0%);
   }
 }
 
-@keyframes slide-left{
-  0%{
+@keyframes slide-left {
+  0% {
     transform: translate(0%);
   }
-  100%{
+
+  100% {
     transform: translateX(-55%);
   }
 }

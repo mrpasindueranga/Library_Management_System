@@ -56,12 +56,17 @@
   border-radius: 2em;
   height: 3em;
   outline: none;
-  border: none;
+  border:  #2EA44F 2px solid;
   font-size: 1em;
   font-weight: 500;
   text-align: center;
   padding-top: .2em;
   text-decoration: none;
+}
+
+.find>a:hover{
+  background-color: white;
+  color: #2EA44F;
 }
 
 .card_container{
@@ -97,16 +102,17 @@
 
 .cat_card .head a{
   text-decoration: none;
+  display: flex;
+  align-items: center;
   color:var(--form-icon-color);
   padding: .2em 1em;
   background-color: var(--form-input-color);
-  border-radius: 2em;
-  text-align: center;
+  border-radius: 3em;
 }
 
 .cat_card .head a:hover{
   color: var(--white-color);
-  background-color: var(--dark-color);
+  background-color: var(--primary-color);
 }
 
 .cat_card .body{
