@@ -1,25 +1,25 @@
-body{
+body {
   width: 100%;
   height: 100%;
 }
 
-.find{
+.find {
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.find form{
+.find form {
   padding: 1em 0em;
   width: 100%;
 }
 
-.find form{
+.find form {
   display: flex;
   justify-content: space-between;
 }
 
-.find form .search{
+.find form .search {
   display: flex;
   width: 38%;
   border: var(--form-input-color) 1px solid;
@@ -28,25 +28,25 @@ body{
   padding: .5em;
 }
 
-.find form .search input{
+.find form .search input {
   width: 100%;
   border: none;
   outline: none;
   text-indent: .5em;
 }
 
-.find form .search svg{
+.find form .search svg {
   stroke: var(--form-input-color);
 }
 
-.search button{
+.search button {
   outline: none;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.find>a{
+.find>a {
   width: 6em;
   display: flex;
   justify-content: center;
@@ -64,15 +64,15 @@ body{
   text-decoration: none;
 }
 
-.card_container{
+.card_container {
   width: 100%;
 }
 
-.mem_card:first-child{
+.mem_card:first-child {
   border-top: var(--form-input-color) 1px solid;
 }
 
-.mem_card{
+.mem_card {
   display: flex;
   justify-content: space-between;
   padding: 1em 0em;
@@ -81,51 +81,51 @@ body{
   border-bottom: var(--form-input-color) 1px solid;
 }
 
-.img{
+.img {
   width: 15%;
   display: flex;
   align-items: center;
 }
 
-.img img{
+.img img {
   width: 100px;
   border-radius: 50%;
 }
 
-.details{
+.details {
   display: flex;
 }
 
-.info{
+.info {
   margin-left: 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.info h2{
+.info h2 {
   color: var(--dark-color);
   text-decoration: underline;
 }
 
-.data{
+.data {
   display: flex;
   align-items: center;
   color: var(--form-icon-color);
 }
 
-.data svg{
+.data svg {
   margin-right: .5em;
 }
 
-.controls{
+.controls {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
 }
 
-.view{
+.view {
   padding: .5em 1em;
   border-radius: 2em;
   font-weight: 500;
@@ -134,19 +134,19 @@ body{
   background-color: var(--form-input-color);
 }
 
-.view:hover{
+.view:hover {
   color: white;
   background-color: var(--dark-color);
 }
 
-.delete{
+.delete {
   margin-right: 1em;
 }
 
-.delete svg{
+.delete svg {
   stroke: var(--form-icon-color);
 }
 
-.delete svg:hover{
+.delete svg:hover {
   stroke: red;
 }

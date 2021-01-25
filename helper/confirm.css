@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorCard {
+  width: 40%;
+  height: 40%;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.errorCard .errorHead {
+  width: 100%;
+  height: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  background-color: var(--primary-color);
+}
+
+.errorPara {
+  margin: 1em;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2em;
+}
+
+.button a {
+  padding: .5em 1em;
+  background-color: var(--dark-color);
+  border-radius: 2em;
+  bottom: .5em;
+  width: 6.5em;
+  color: white;
+  text-decoration: none;
+  border: var(--dark-color) 2px solid;
+  position: absolute;
+}
+
+.button a:first-child {
+  right: 10em;
+}
