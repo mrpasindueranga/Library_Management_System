@@ -1,0 +1,130 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.find {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.find form {
+  padding: 1em 0em;
+  width: 100%;
+}
+
+.find form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find form .search {
+  display: flex;
+  width: 38%;
+  border: var(--form-input-color) 1px solid;
+  border-radius: 2em;
+  overflow: hidden;
+  padding: .5em;
+}
+
+.find form .search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  text-indent: .5em;
+}
+
+.find form .search svg {
+  stroke: var(--form-input-color);
+}
+
+.search button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.find>a {
+  width: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2EA44F;
+  color: #FFFFE9;
+  border-radius: 2em;
+  height: 3em;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  padding-top: .2em;
+  text-decoration: none;
+}
+
+.card_container {
+  width: 100%;
+}
+
+.cat_card:first-child {
+  border-top: var(--form-input-color) 1px solid;
+}
+
+.cat_card {
+  padding: 1em 0em;
+  width: 98%;
+  height: 20%;
+  border-bottom: var(--form-input-color) 1px solid;
+}
+
+.cat_card .head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cat_card .head .topic {
+  display: flex;
+  align-items: center;
+}
+
+.cat_card .head .topic h1 {
+  color: var(--dark-color);
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.cat_card .head a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--form-icon-color);
+  padding: .2em 1em;
+  background-color: var(--form-input-color);
+  border-radius: 3em;
+}
+
+.cat_card .head a:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.cat_card .body {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body a svg {
+  stroke: var(--form-icon-color);
+}
+
+.body a svg:hover {
+  stroke: red;
+}
+
+.author {
+  color: var(--form-icon-color);
+}

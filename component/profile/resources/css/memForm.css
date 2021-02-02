@@ -1,0 +1,84 @@
+.profile {
+  display: flex;
+  width: 100%;
+}
+
+.profile .img {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 12em;
+}
+
+.profile .details {
+  width: 60%;
+}
+
+.details form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.details form .section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.details form .section:last-child {
+  margin-bottom: 0em;
+}
+
+.details form .section h3 {
+  font-weight: 100;
+}
+
+.details form .section hr {
+  width: 80%;
+  height: 2px;
+  background-color: black;
+  color: black;
+}
+
+.details form .section span {
+  display: flex;
+  flex-direction: column;
+  padding: .5em 1em;
+  width: 70%;
+}
+
+.details form .section span label {
+  margin-bottom: .5em;
+}
+
+input,
+textarea,
+select {
+  padding: .5em 1em;
+  outline: none;
+  border-radius: .2em;
+  border: var(--form-icon-color) 1px solid;
+  color: var(--dark-color);
+  font-size: 1em;
+  font-weight: 200;
+}
+
+#Save {
+  position: absolute;
+  bottom: 1.4em;
+  right: 7em;
+  border-radius: 1.5em;
+  padding: .5em 1.2em;
+  color: white;
+  background-color: var(--success-color);
+  cursor: pointer;
+}
+
+#dp {
+  border-radius: 10%;
+  width: 80%;
+}

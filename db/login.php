@@ -1,6 +1,5 @@
 <?php
 require '../db/Conn.php';
-
 session_start();
 
 $Uname = htmlentities($_POST['Uname']);

@@ -31,9 +31,9 @@
   * [x] Implement mvp error handling
 
   ## Member (Only for librarian)
-  * [ ] Implement member create
+  * [x] Implement member create
   * [x] Implement profile view
-  * [ ] Implement member delete
+  * [x] Implement member delete
   * [x] Implement member search
   * [ ] Implement mvp error handling
 
@@ -41,9 +41,9 @@
   
   * Librarian :
   
-  * [ ] Implement book create
-  * [ ] Implement book delete
-  * [ ] Implement book update
+  * [x] Implement book create
+  * [x] Implement book delete
+  * [x] Implement book update
   * [ ] Implement mvp error handling
 
   * All User : 

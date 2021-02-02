@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.book {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: .5em 0em;
+  padding-right: 1em;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book_img {
+  width: 20%;
+}
+
+.details {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input,
+.input select {
+  padding: .5em;
+  font-size: 1em;
+  font-weight: 200;
+  width: 25em;
+  margin-bottom: 1em;
+  outline: none;
+  color: var(--dark-color);
+}
+
+.title h3 {
+  margin-bottom: 1.8em;
+}
+
+.title h3:last-child {
+  margin-bottom: 0em;
+}
+
+.input select {
+  margin-bottom: 0em;
+}
+
+.book_img img {
+  width: 80%;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  background-color: transparent;
+  border: none;
+  color: var(--dark-color);
+  cursor: pointer;
+  outline: none;
+}
+
+.change input {
+  margin-top: 1em;
+  width: 95%;
+  padding: .5em;
+  border-radius: .5em;
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: .9em;
+  background-color: #FAFBFC;
+  border: var(--form-input-color) .1em solid;
+  outline: none;
+  cursor: pointer;
+}
+
+.book_btn {
+  position: absolute;
+  bottom: 2em;
+}
+
+.book_btn input {
+  padding: .5em 1em;
+  background-color: var(--success-color);
+  color: white;
+  border-radius: 2em;
+  border: var(--success-color) 2px solid;
+  outline: none;
+  cursor: pointer;
+}
+
+.change input:hover {
+  background-color: var(--form-input-color);
+  border: var(--dark-color) .1em solid;
+}

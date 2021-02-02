@@ -14,7 +14,7 @@ echo '
   </div>
 ';
 
-if(!isset($_SESSION)){
+if (!isset($_SESSION)) {
   echo '
     <nav class="navlink">
       <a href="../public/index.php" id="home">Home</a>
@@ -22,7 +22,7 @@ if(!isset($_SESSION)){
       <a href="../public/contact.php" id="contact">Contact</a>
     </nav>
 ';
-}else {
+} else {
   echo '
   <div class="search">
     <select name="category">
@@ -38,40 +38,35 @@ if(!isset($_SESSION)){
   </div>
   <nav class="navbar">
     <a href="../public/home.php">Explore</a>
-    <a href="#">Browse</a>
     ';
 
-    if ($_SESSION['Post']==='Student'||$_SESSION['Post']==='Professor'):
-echo '
+  if ($_SESSION['Post'] === 'Student' || $_SESSION['Post'] === 'Professor') :
+    echo '
     <a href="#">My Books</a>
     ';
-    endif;
+  endif;
 
-    if ($_SESSION['Post']==='Librarian'):
-      echo '
+  if ($_SESSION['Post'] === 'Librarian') :
+    echo '
           <a href="../public/dashboard.php">Dashboard</a>
           ';
-    endif;
+  endif;
 
-echo '    
+  echo '    
     <ul class="profile">
       <div class="user-profile">
-        <li id="profile"><img src="../public/resources/profile/'.$_SESSION['Profile'].'" alt=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></li>  
+        <li id="profile"><img src="../public/resources/profile/' . $_SESSION['Profile'] . '" alt=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></li>  
       </div>
       <ul class="profile-menu">
       ';
 
-    echo '
+  echo '
         <a href="../public/profile.php">
         <li>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
           <span>Your Profile</span>
         </li>
         </a>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-          <span>Activity
-        </li>
         <a href="../public/settings.php">
         <li>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
@@ -88,7 +83,6 @@ echo '
     </ul>
   </nav>
   ';
-
 }
 
 echo '
