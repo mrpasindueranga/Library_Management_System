@@ -52,5 +52,3 @@
 
     header('location: ../component/profile/category.php');
    }
-
-?>

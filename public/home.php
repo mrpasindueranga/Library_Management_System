@@ -11,6 +11,7 @@ if ($_SESSION) :
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/css/prop.css">
     <link rel="stylesheet" href="./resources/css/navbar.css">
+    <link rel="stylesheet" href="./resources/css/home.css">
     <script src="../views/js/navbar.js" defer></script>
     <title>Lowa State University | E-Library</title>
   </head>
@@ -20,7 +21,7 @@ if ($_SESSION) :
     require_once '../views/navbar.php';
     ?>
     <?php
-    require_once '../component/explore/newBooks.php';
+    require_once '../component/explore/book.php';
     ?>
   </body>
 

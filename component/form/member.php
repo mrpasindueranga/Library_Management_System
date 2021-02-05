@@ -1,5 +1,7 @@
 <?php require '../../db/member_edit.php';
 
+// if v_id isset display view member
+
 if (isset($_GET['v_id'])) :
 ?>
   <div class="profile">
@@ -82,6 +84,7 @@ if (isset($_GET['v_id'])) :
     </div>
   </div>
 <?php endif; ?>
+<!-- IF cr_id is set display create member form -->
 <?php if (isset($_GET['cr_id'])) : ?>
   <div class="profile">
     <div class="details">

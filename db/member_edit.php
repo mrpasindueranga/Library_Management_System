@@ -5,6 +5,8 @@ $data = [
   'status' => ''
 ];
 
+// if v_id isset display member
+
 if (isset($_GET['v_id'])) {
   require '../../db/Conn.php';
 
@@ -15,6 +17,8 @@ if (isset($_GET['v_id'])) {
   $mem = $getMemQuery->get_result()->fetch_assoc();
   $conn->close();
 }
+
+// if d_id isset  permenently remove member
 
 if (isset($_GET['d_id'])) {
   require '../../db/Conn.php';
@@ -31,6 +35,7 @@ if (isset($_GET['d_id'])) {
   $conn->close();
 }
 
+// if de_id isset deactivate account 
 
 if (isset($_GET['de_id'])) {
   require '../../db/Conn.php';
@@ -42,7 +47,7 @@ if (isset($_GET['de_id'])) {
   $conn->close();
 }
 
-// Edit after implement the member form
+// if c_id isset store member details after checking validation
 
 if (isset($_POST['c_id'])) {
   session_start();
@@ -86,6 +91,8 @@ if (isset($_POST['c_id'])) {
     header('location: ../component/profile/member.php');
   }
 }
+
+// get next member id 
 
 function getNewID()
 {

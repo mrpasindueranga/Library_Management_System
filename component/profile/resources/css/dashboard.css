@@ -1,0 +1,13 @@
+section {
+  width: 100%;
+}
+
+section>div:first-child {
+  width: 100%;
+  margin-top: 3em;
+}
+
+section>div {
+  width: 100%;
+  margin-bottom: 3em;
+}

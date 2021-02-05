@@ -64,4 +64,3 @@
   }else {
     header('location: ../public/index.php');
   }
-?>

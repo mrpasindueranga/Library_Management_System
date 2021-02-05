@@ -1,0 +1,58 @@
+body {
+  overflow-y: auto;
+}
+
+.explore {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.book_card {
+  width: 49%;
+  height: 15em;
+  box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.1);
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.book_card .img {
+  width: 20%;
+  height: 100%;
+}
+
+.book_card .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.book_card .details {
+  width: 80%;
+  padding: 1em;
+}
+
+.book_card .details h3 {
+  color: var(--dark-color);
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  text-decoration: underline;
+}
+
+.book_card .details h4 {
+  margin-bottom: 1em;
+  color: var(--form-icon-color);
+}
+
+.book_card .btn {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.book_card .btn button {
+  padding: .8em 1em;
+  outline: none;
+  cursor: pointer;
+}

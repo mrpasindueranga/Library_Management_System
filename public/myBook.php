@@ -11,25 +11,21 @@ if ($_SESSION) :
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/css/prop.css">
     <link rel="stylesheet" href="./resources/css/navbar.css">
-    <link rel="stylesheet" href="./resources/css/dashboard.css">
+    <link rel="stylesheet" href="./resources/css/home.css">
     <script src="../views/js/navbar.js" defer></script>
     <title>Lowa State University | E-Library</title>
   </head>
 
   <body>
-    <?php require_once '../views/navbar.php'; ?>
-    <section class="profile">
-      <div class="info">
-        <?php require_once '../views/profile/info.php'; ?>
-      </div>
-      <div class="content">
-        <iframe src="../component/profile/member.php" frameborder="0"></iframe>
-      </div>
-    </section>
+    <?php
+    require_once '../views/navbar.php';
+    ?>
+    <?php
+    require_once '../component/explore/myBook.php';
+    ?>
   </body>
 
   </html>
-
 <?php
 endif;
 ?>

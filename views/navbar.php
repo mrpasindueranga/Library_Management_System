@@ -18,23 +18,26 @@ if (!isset($_SESSION)) {
   echo '
     <nav class="navlink">
       <a href="../public/index.php" id="home">Home</a>
-      <a href="#" id="about">About Us</a>
       <a href="../public/contact.php" id="contact">Contact</a>
     </nav>
 ';
 } else {
   echo '
   <div class="search">
-    <select name="category">
-      <option value="All">All</option>
+    <form action="./home.php">
+      <select name="category">
+        <option value="All">All</option>
     ';
 
   require_once '../db/category.php';
 
   echo '
-    </select>
-    <input type="text" placeholder="Find your interest here...">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </select>
+      <input name="book" type="text" placeholder="Find your interest here...">
+      <button type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+    </form>
   </div>
   <nav class="navbar">
     <a href="../public/home.php">Explore</a>
@@ -42,7 +45,7 @@ if (!isset($_SESSION)) {
 
   if ($_SESSION['Post'] === 'Student' || $_SESSION['Post'] === 'Professor') :
     echo '
-    <a href="#">My Books</a>
+    <a href="../public/myBook.php">My Books</a>
     ';
   endif;
 

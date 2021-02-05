@@ -12,9 +12,9 @@
   * [x]  Implement mvp error handling
 
   ## Home
-  * [ ] Implement search book
-  * [ ] Implement search book via category
-  * [ ] Every book should organize with book catalog
+  * [x] Implement search book
+  * [x] Implement search book via category
+  * [x] Every book should organize with book catalog
   * [x] Implement logout
 
   ## Category (Only for librarian)
@@ -23,7 +23,7 @@
   * [x] Implement category view
   * [x] Implement category update
   * [x] Implement category search
-  * [ ] Implement mvp error handling
+  * [x] Implement mvp error handling
 
   ## Profile (Own profile)
   * [x] Implement profile view
@@ -48,9 +48,9 @@
 
   * All User : 
 
-  * [ ] Implement book view book catalog
+  * [x] Implement book view book catalog
 
   ## Reservation
-  * [ ] All users expect librarian can reserve book for 24h
-  * [ ] After the 24h need to update book status
+  * [x] All users expect librarian can reserve book for 24h
+  * [x] After the 24h need to update book status
   * [ ] After the borrowing book need to update book status (Feature for Librarian)
