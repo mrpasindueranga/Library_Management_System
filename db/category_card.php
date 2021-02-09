@@ -1,4 +1,5 @@
 <?php
+// search category
 if (!isset($_GET['q'])) {
   require '../../db/Conn.php';
   $allCat = $conn->query('SELECT * FROM category ORDER BY Name');

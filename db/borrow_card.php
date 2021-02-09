@@ -4,17 +4,17 @@ $allBorrow = $conn->query('SELECT borrow.*, fine.Amount FROM borrow LEFT JOIN fi
 $conn->close();
 
 while ($row = $allBorrow->fetch_assoc()) :
-  //   $expireDate = date_create($row['ExpireDate']);
-  //   $currentDate = date_create(date('Y-m-d H:i:s', time()));
-  //   $diff = date_diff($currentDate, $expireDate);
-
-  //   if ($diff->d >= 1) {
-  //     $amount = $diff->d * 5;
-  //     $ID = $row['ID'];
-  //     require '../../db/Conn.php';
-  //     $setAmount = $conn->query('UPDATE fine SET Amount = "$amount" WHERE BRID = "$ID"');
-  //     $conn->close();
-  //   }
+  $expireDate = date_create($row['ExpireDate']);
+  $currentDate = date_create(date('Y-m-d H:i:s', time()));
+  $diff = date_diff($currentDate, $expireDate);
+  // add fine
+  if ($diff->d >= 1) {
+    $amount = $diff->d * 5;
+    $ID = $row['ID'];
+    require '../../db/Conn.php';
+    $setAmount = $conn->query('UPDATE fine SET Amount = "$amount" WHERE BRID = "$ID"');
+    $conn->close();
+  }
 ?>
 
   <div class="borrow_card">

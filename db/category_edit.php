@@ -1,5 +1,5 @@
 <?php
-
+// view category
   if (isset($_GET['v_id'])) {
       require '../../db/Conn.php';
 
@@ -10,7 +10,7 @@
       $cat = $getCatQuery->get_result()->fetch_assoc();
       $conn->close();
   }
-
+// delete category
   if (isset($_GET['d_id'])) {
     require '../../db/Conn.php';
 
@@ -22,7 +22,7 @@
 
     header('location: ./category.php');
 }
-
+// edit category
   if (isset($_GET['e_id'])) {
     require './Conn.php';
 
@@ -37,7 +37,7 @@
 
     header('location: ../component/profile/category.php');
   }
-
+// create category
   if (isset($_GET['c_id'])) {
     require './Conn.php';
 

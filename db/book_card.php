@@ -1,4 +1,5 @@
 <?php
+// search book
 if (!isset($_GET['q'])) {
   require '../../db/Conn.php';
   $allBook = $conn->query('SELECT * FROM book ORDER BY Title');

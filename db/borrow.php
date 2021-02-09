@@ -4,7 +4,7 @@ $UID = htmlentities($_POST['UID']);
 $BID = htmlentities($_POST['BID']);
 $ExDate = htmlentities($_POST['Date']);
 $BrDate = date('Y-m-d H:i:s', time());
-
+// insert borrow records
 $makeBorrow = $conn->prepare('INSERT INTO borrow(UID,BID,BorrowDate,ExpireDate) VALUES(?,?,?,?)');
 $makeBorrow->bind_param('iiss', $UID, $BID, $BrDate, $ExDate);
 $makeBorrow->execute();
