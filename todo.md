@@ -1,10 +1,10 @@
- ###################################################
+ ---
  # Lowa State Library Management System
 
  ### Author : H.D.Pasindu Eranga
  ### Project : Online book reservation system for library
  ### License : MIT 
- ###################################################
+---
   ## Create Authorization
   * [x]  Implement landing page
   * [x]  Implement login
